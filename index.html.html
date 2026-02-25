@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tatiana Kinvoedo — Portfolio Mode & Miss ENSET Lokossa</title>
+<title>Tatiana Kinvoedo — Portfolio Mode & Créatrice de Mode</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -522,11 +522,6 @@
   }
   .qa { margin-top:22px; font-size:0.58rem; letter-spacing:0.3em; text-transform:uppercase; color:rgba(250,246,239,0.3); }
 
-  /* ══════════════════════════════════════
-     MISS
-  ══════════════════════════════════════ */
-  #miss { background:var(--black); }
-  .miss-lay { display:grid; grid-template-columns:0.9fr 1.1fr; gap:72px; align-items:start; }
   .mgal { display:grid; grid-template-columns:1fr 1fr; grid-template-rows:180px 150px 150px; gap:3px; }
   .mg {
     background:linear-gradient(135deg,#181818,#222);
@@ -551,49 +546,6 @@
     color:var(--gold); background:var(--gold-dim);
   }
 
-  /* ══════════════════════════════════════
-     SPONSORS
-  ══════════════════════════════════════ */
-  #sponsors { background:var(--charcoal); }
-  .sp2col { display:grid; grid-template-columns:1fr 1fr; gap:72px; margin-bottom:68px; }
-  .spitch p { font-size:0.93rem; line-height:1.9; color:rgba(250,246,239,0.7); margin-bottom:16px; }
-  .spitch p strong { color:var(--gold-light); font-weight:400; }
-  .blist { display:flex; flex-direction:column; }
-  .bitem { display:flex; gap:18px; align-items:flex-start; padding:22px 0 22px 4px; border-bottom:1px solid var(--border); }
-  .bitem:first-child { border-top:1px solid var(--border); }
-  .bn { font-family:'Cormorant Garamond',serif; font-size:2rem; color:var(--gold); opacity:0.22; line-height:1; flex-shrink:0; width:32px; margin-top:-2px; }
-  .bi h4 { font-family:'Cormorant Garamond',serif; font-size:1rem; margin-bottom:4px; }
-  .bi p { font-size:0.76rem; color:rgba(250,246,239,0.48); line-height:1.6; }
-
-  /* Packages sponsors */
-  .pkgs { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; margin-bottom:52px; }
-  .pkg {
-    padding:40px 30px; background:var(--surface); border:1px solid transparent;
-    text-align:center; transition:border-color 0.3s, background 0.3s, transform 0.3s;
-    position:relative;
-  }
-  .pkg.feat { border-color:var(--gold); background:rgba(201,168,108,0.05); }
-  .pkg.feat::before {
-    content:'RECOMMANDÉ'; position:absolute; top:-1px; left:50%; transform:translateX(-50%);
-    background:var(--gold); color:var(--black); font-size:0.48rem;
-    letter-spacing:0.3em; padding:5px 12px; font-weight:600;
-  }
-  .pkg:not(.feat):hover { border-color:var(--border); transform:translateY(-4px); }
-  .pkg.feat:hover { transform:translateY(-4px); }
-  .pkg-ic { font-size:1.8rem; margin-bottom:14px; display:block; opacity:0.55; }
-  .pkg-nm { font-family:'Cormorant Garamond',serif; font-size:1.3rem; margin-bottom:8px; }
-  .pkg-ds { font-size:0.72rem; color:rgba(250,246,239,0.42); line-height:1.6; margin-bottom:16px; }
-  .pkg-ul { list-style:none; }
-  .pkg-ul li { font-size:0.7rem; padding:6px 0; border-bottom:1px solid rgba(255,255,255,0.05); color:rgba(250,246,239,0.52); }
-  .pkg-ul li::before { content:'— '; color:var(--gold); }
-
-  /* CTA sponsors */
-  .cta-box {
-    padding:60px; text-align:center;
-    border:1px solid var(--border);
-    background:linear-gradient(135deg,rgba(201,168,108,0.05),transparent);
-    position:relative; overflow:hidden;
-  }
   .cta-box::before { content:''; position:absolute; top:-60px; right:-60px; width:180px; height:180px; border:1px solid var(--border); border-radius:50%; pointer-events:none; }
   .cta-box::after { content:''; position:absolute; bottom:-70px; left:-40px; width:150px; height:150px; border:1px solid var(--border); border-radius:50%; pointer-events:none; }
   .cta-box h3 { font-family:'Cormorant Garamond',serif; font-size:2.1rem; margin-bottom:12px; position:relative; z-index:1; }
@@ -657,7 +609,7 @@
     .hero-overlay-text { left: 22px; bottom: 40px; }
     .hero-badges-float { right: 16px; top: 84px; }
     .hero-presentation { grid-template-columns:1fr; padding:44px 22px 56px; gap:36px; }
-    .ab-grid, .miss-lay, .sp2col { grid-template-columns:1fr; gap:44px; }
+    .ab-grid, .sp2col { grid-template-columns:1fr; gap:44px; }
     .pgrid { grid-template-columns:1fr 1fr; grid-template-rows:auto; }
     .pi:nth-child(1) { grid-column:span 2; height:280px; }
     .pi:nth-child(n+2) { grid-column:span 1; height:190px; }
@@ -667,6 +619,100 @@
     footer { flex-direction:column; gap:14px; text-align:center; }
     .cta-box { padding:36px 22px; }
   }
+
+  /* ══════════════════════════════════════
+     FORMULAIRE CONTACT
+  ══════════════════════════════════════ */
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 0.6fr;
+    gap: 52px;
+    align-items: start;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .form-label {
+    font-size: 0.6rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .form-input {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--cream);
+    padding: 14px 18px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 300;
+    outline: none;
+    transition: border-color 0.3s;
+    width: 100%;
+  }
+  .form-input:focus { border-color: var(--gold); }
+  .form-input::placeholder { color: rgba(250,246,239,0.25); }
+  .form-select {
+    appearance: none;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23C9A86C' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+  }
+  .form-select option { background: var(--surface); color: var(--cream); }
+  .form-textarea {
+    min-height: 150px;
+    resize: vertical;
+  }
+  .form-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 0.66rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--black);
+    background: var(--gold);
+    padding: 18px 36px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 8px;
+    align-self: flex-start;
+  }
+  .form-btn:hover { background: var(--gold-light); transform: translateY(-2px); }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .ci-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    color: var(--gold-light);
+    margin-bottom: 14px;
+  }
+  @media (max-width: 900px) {
+    .form-grid { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    .form-btn { width: 100%; }
+  }
+
 </style>
 </head>
 <body>
@@ -681,11 +727,8 @@
   <ul class="nav-links" id="navLinks">
     <li><a href="#about"    data-s="about">À Propos</a></li>
     <li><a href="#portfolio" data-s="portfolio">Portfolio</a></li>
-    <li><a href="#miss"     data-s="miss">Miss</a></li>
-    <li><a href="#sponsors" data-s="sponsors">Sponsors</a></li>
     <li><a href="#contact"  data-s="contact">Contact</a></li>
   </ul>
-  <a href="/cdn-cgi/l/email-protection#fc889d88959d929dd29795928a93999893bc99919d9590d29f9391c38f899e96999f88c1af8c93928f938e95929bd9ceccb1958f8fd9ceccb9b2afb9a8" class="nav-cta">Devenir Sponsor</a>
 
   <!-- Burger mobile -->
 <button class="nav-burger" id="navBurger" aria-label="Menu">
@@ -704,8 +747,6 @@
   <ul>
     <li><a href="#about">À Propos</a></li>
     <li><a href="#portfolio">Portfolio Mode</a></li>
-    <li><a href="#miss">Concours Miss</a></li>
-    <li><a href="#sponsors">Sponsors</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </div>
@@ -745,14 +786,13 @@
 
     <!-- Badges flottants (haut droite) -->
     <div class="hero-badges-float">
-      <span class="hero-badge gold">Candidate Miss ENSET 2026</span>
       <span class="hero-badge">1ère Année MM-V · Lokossa</span>
       <span class="hero-badge">Stylisme & Création de Mode</span>
     </div>
 
     <!-- Nom sur la photo (bas gauche) -->
     <div class="hero-overlay-text">
-      <div class="hot-eyebrow">Miss ENSET Lokossa · Créatrice de Mode</div>
+      <div class="hot-eyebrow">Créatrice de Mode · ENSET Lokossa</div>
       <h1 class="hot-name">Tatiana<br><em>KINVOEDO</em></h1>
     </div>
 
@@ -765,7 +805,7 @@
         Élégance, vision<br>et <em>ambition</em>
       </h2>
       <p class="pres-text">
-        Tatiana KINVOEDO est une jeune créatrice de mode et candidate au concours Miss de l'École Normale Supérieure de l'Enseignement Technique de Lokossa. Étudiante en première année MM-V, elle allie talent artistique, rigueur académique et engagement social pour construire un profil d'exception. Passionnée de stylisme africain contemporain, elle croit profondément que la mode est un vecteur de transformation — pour soi, et pour sa communauté.
+        Tatiana KINVOEDO est une jeune créatrice de mode étudiante à l'École Normale Supérieure de l'Enseignement Technique de Lokossa. En première année MM-V, elle allie talent artistique, rigueur académique et engagement social pour construire un profil d'exception. Passionnée de stylisme africain contemporain, elle croit profondément que la mode est un vecteur de transformation — pour soi, et pour sa communauté.
       </p>
     </div>
     <div class="pres-right">
@@ -774,7 +814,6 @@
       </div>
       <div class="pres-cta-row">
       
-        <a href="#sponsors" class="btn-outline">Devenir sponsor</a>
       </div>
     </div>
   </div>
@@ -797,7 +836,7 @@
     <div class="ab-txt rv">
       <h2 class="st2">Une vision,<br>une <em>identité</em></h2>
       <p>Étudiante en <strong>première année MM-V</strong> à l'École Normale Supérieure de l'Enseignement Technique de Lokossa, Tatiana Kinvoedo n'est pas simplement une candidate — elle est une créatrice en devenir, animée par une passion profonde pour la mode, le stylisme et l'expression artistique.</p>
-      <p>Dès ses premières années, Tatiana a su que la mode était bien plus qu'une question d'apparence : c'est un engagement, un outil de transformation sociale. Aujourd'hui, elle met cette conviction au service de son parcours académique et de sa candidature au concours Miss ENSET.</p>
+      <p>Dès ses premières années, Tatiana a su que la mode était bien plus qu'une question d'apparence : c'est un engagement, un outil de transformation sociale. Aujourd'hui, elle met cette conviction au service de son parcours académique et de ses projets créatifs.</p>
       <p><strong>Ambitieuse, créative et engagée</strong>, elle allie rigueur scolaire et expression artistique, construisant pierre à pierre un profil qui force le respect — et inspire les autres jeunes femmes de sa région.</p>
       <div class="skills">
         <span class="sk">Coupe & Construction</span>
@@ -833,7 +872,7 @@
     <div class="pi">
       <img src="tati2.jpeg" alt="Collection Racines Dorées"
            style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center center;display:block;transition:transform 0.6s cubic-bezier(0.4,0,0.2,1);">
-      <div class="pov"><h4>Collection « Racines Dorées »</h4><p>Preselection Miss</p></div>
+      <div class="pov"><h4>Collection « Racines Dorées »</h4><p>Collection personnelle</p></div>
     </div>
 
     <div class="pi">
@@ -870,156 +909,88 @@
   <div class="qa">— Tatiana Kinvoedo · Créatrice de Mode · ENSET Lokossa</div>
 </div>
 
-<!-- ══════════════════════════════════════
-     MISS
-══════════════════════════════════════ -->
-<section id="miss">
-  <div class="sl">03 · Concours Miss</div>
-  <div class="miss-lay">
-    <div class="mgal rv">
-      <div> <img src="tati2.jpeg" alt="Tatiana Kinvoedo"  style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; object-position:center center; display:block; filter:brightness(0.80);"></div>
-      <div class="mg">📸</div>
-      <div class="mg">🎬</div>
-      <div class="mg">✨</div>
-      <div class="mg">🌟</div>
-    </div>
-    <div class="mb rv">
-      <h2 class="st2">Candidate à la<br><em>Finale Miss</em></h2>
-    
-      <p>Tatiana Kinvoedo se présente à cette finale avec un projet clair : allier son talent de créatrice de mode à une parole engagée, portant haut les ambitions de sa génération. Son profil — studieuse, créative, déterminée — fait d'elle une candidate d'exception, capable de représenter dignement son école et sa région.</p>
-      <div class="causes">
-        <div class="cc"><h5>Éducation des filles</h5><p>Promouvoir l'accès à la formation professionnelle pour les jeunes femmes du Bénin.</p></div>
-        <div class="cc"><h5>Mode éthique & locale</h5><p>Valoriser les artisans et textiles locaux, soutenir une mode africaine durable.</p></div>
-        <div class="cc"><h5>Entrepreneuriat féminin</h5><p>Encourager les jeunes filles à oser créer, innover et entreprendre dès l'école.</p></div>
-        <div class="cc"><h5>Confiance & estime de soi</h5><p>Porter un message d'affirmation et d'autonomisation auprès de la jeunesse.</p></div>
-      </div>
-      <div class="traits">
-        <span class="tr2">Élégante</span><span class="tr2">Créative</span><span class="tr2">Ambitieuse</span>
-        <span class="tr2">Engagée</span><span class="tr2">Cultivée</span><span class="tr2">Audacieuse</span>
-        <span class="tr2">Authentique</span><span class="tr2">Déterminée</span>
-      </div>
-    </div>
-  </div>
-</section>
 
-<div class="dvdr"></div>
-
-<!-- ══════════════════════════════════════
-     SPONSORS
-══════════════════════════════════════ -->
-<section id="sponsors">
-  <div class="sl">04 · Sponsors</div>
-  <h2 class="st2 rv">Pourquoi sponsoriser<br><em>Tatiana ?</em></h2>
-
-  <div class="sp2col">
-    <div class="spitch rv">
-      <p>Sponsoriser Tatiana Kinvoedo, c'est choisir d'investir dans un profil rare : une jeune femme qui allie <strong>talent créatif, rigueur académique et ambition sociale</strong>. Candidate à la finale du concours Miss de l'ENSET de Lokossa, elle est une porte-drapeau de la jeunesse béninoise en mouvement.</p>
-      <p>Son rayonnement lors du concours — sur scène, sur les réseaux sociaux, dans les médias locaux — offre aux sponsors une <strong>visibilité authentique et ciblée</strong>, auprès d'un public jeune, engagé et en croissance constante.</p>
-      <p>Nous recherchons des sponsors partageant nos valeurs : l'éducation, l'excellence, la créativité et le développement de la jeunesse féminine. Chaque sponsoring est construit sur mesure pour maximiser votre retour sur image.</p>
-    </div>
-    <div class="blist rv">
-      <div class="bitem"><div class="bn">01</div><div class="bi"><h4>Visibilité lors du concours</h4><p>Votre marque associée aux tenues, à la communication officielle et aux performances de Tatiana pendant toute la durée du concours.</p></div></div>
-      <div class="bitem"><div class="bn">02</div><div class="bi"><h4>Présence sur les réseaux sociaux</h4><p>Mentions et placements sur Instagram et TikTok, avec une audience jeune et locale très engagée.</p></div></div>
-      <div class="bitem"><div class="bn">03</div><div class="bi"><h4>Image & notoriété positive</h4><p>Votre marque associée à un profil inspirant — excellence, créativité, engagement social — un capital image fort et durable.</p></div></div>
-      <div class="bitem"><div class="bn">04</div><div class="bi"><h4>Retombées médias locales</h4><p>Couverture lors des événements de l'école, reportages locaux, cérémonies — une exposition concrète et mesurable.</p></div></div>
-    </div>
-  </div>
-
-  <!-- Offres de sponsoring -->
-  <div class="pkgs rv">
-    <div class="pkg">
-      <span class="pkg-ic">🌿</span>
-      <div class="pkg-nm">Sponsor Bronze</div>
-      <p class="pkg-ds">Soutien initial idéal pour les commerces et petites structures locales.</p>
-      <ul class="pkg-ul">
-        <li>Mention sur les réseaux sociaux</li>
-        <li>Logo sur les supports print</li>
-        <li>Remerciement public en cérémonie</li>
-      </ul>
-    </div>
-    <div class="pkg feat">
-      <span class="pkg-ic">⭐</span>
-      <div class="pkg-nm">Sponsor Or</div>
-      <p class="pkg-ds">Le sponsoring idéal pour maximiser votre visibilité et votre impact.</p>
-      <ul class="pkg-ul">
-        <li>Logo sur tenue de scène</li>
-        <li>Posts dédiés sur les réseaux</li>
-        <li>Présence à la cérémonie finale</li>
-        <li>Interview commune partagée</li>
-        <li>Rapport de visibilité post-événement</li>
-      </ul>
-    </div>
-    <div class="pkg">
-      <span class="pkg-ic">💎</span>
-      <div class="pkg-nm">Sponsor Prestige</div>
-      <p class="pkg-ds">Sponsoring exclusif pour les entreprises souhaitant un ancrage fort et durable.</p>
-      <ul class="pkg-ul">
-        <li>Tous les avantages Or</li>
-        <li>Co-branding exclusif</li>
-        <li>Ambassadrice post-concours</li>
-        <li>Sponsoring mode long terme</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="cta-box rv">
-    <h3>Devenez Sponsor de Tatiana</h3>
-    <p>Vous êtes une entreprise, une marque ou un particulier souhaitant sponsoriser une candidate d'exception ? Contactez-nous pour construire un sponsoring à votre mesure.</p>
-    <div class="cta-btns">
-      <a href="/cdn-cgi/l/email-protection#7c081d08151d121d521715120a131918133c19111d1510521f1311430f091e16191f08412f0c13120f130e15121b594e4c31150f0f594e4c39322f3928594e4c301317130f0f1d" class="btn-gold">✉ Contacter pour un sponsoring</a>
-      <a href="#contact" class="btn-outline">Voir tous les contacts</a>
-    </div>
-  </div>
-</section>
 
 <!-- ══════════════════════════════════════
      CONTACT
 ══════════════════════════════════════ -->
 <section id="contact">
-  <div class="sl">05 · Contact & Réseaux</div>
-  <h2 class="st2 rv">Restons<br><em>connectés</em></h2>
-  <p class="co-intro rv">Pour toute demande de sponsoring, collaboration mode ou simplement pour suivre le parcours de Tatiana, retrouvez-la sur ses réseaux et par email.</p>
-  <div class="cogrid rv">
+  <div class="sl">03 · Contact & Projets</div>
+  <h2 class="st2 rv">Travaillons<br><em>ensemble</em></h2>
+  <p class="co-intro rv">Vous avez un projet mode, une collaboration vêtements ou une idée créative ? Remplissez le formulaire ci-dessous — Tatiana vous répondra dans les plus brefs délais.</p>
 
-    <!-- Facebook -->
-    <a href="https://www.facebook.com/profile.php?id=61588599156769" target="_blank" class="cocard">
-      <svg class="co-ic" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M24 12.073C24 5.404 18.627 0 12 0S0 5.404 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" fill="#C9A86C"/>
-      </svg>
-      <div class="co-pl">Facebook</div>
-      <div class="co-hd">Tatiana Kinvoedo</div>
-      <div class="co-ds">Actualités, coulisses du concours, vie étudiante à l'ENSET</div>
-    </a>
+  <div class="form-grid rv">
 
-    <!-- TikTok -->
-    <a href="https://www.tiktok.com/@misstati71?_r=1&_t=ZS-94CLpFKBFZ9" target="_blank" class="cocard">
-      <svg class="co-ic" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.52V6.76a4.85 4.85 0 01-1.02-.07z" fill="#C9A86C"/>
-      </svg>
-      <div class="co-pl">TikTok</div>
-      <div class="co-hd">@misstati71</div>
-      <div class="co-ds">Vidéos mode, défilés, tutoriels stylisme, coulisses Miss</div>
-    </a>
+    <!-- Formulaire -->
+    <form class="contact-form" action="https://formsubmit.co/tatianakinvoedo@gmail.com" method="POST">
+      <!-- Options FormSubmit -->
+      <input type="hidden" name="_subject" value="Nouveau projet mode — Portfolio Tatiana">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="javascript:void(0)">
+      <input type="hidden" name="_template" value="box">
 
-    <!-- WhatsApp -->
-    <a href="https://wa.me/22993936295" target="_blank" class="cocard">
-      <svg class="co-ic" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="#C9A86C"/>
-      </svg>
-      <div class="co-pl">WhatsApp</div>
-      <div class="co-hd">+229 93 93 62 95</div>
-      <div class="co-ds">Disponible pour sponsoring et collaborations — réponse rapide</div>
-    </a>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Nom complet *</label>
+          <input type="text" name="nom" class="form-input" placeholder="Votre nom" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email *</label>
+          <input type="email" name="email" class="form-input" placeholder="votre@email.com" required>
+        </div>
+      </div>
 
-    <!-- Email -->
-    <a href="/cdn-cgi/l/email-protection#c6b2a7b2afa7a8a7adafa8b0a9a3a2a986a1aba7afaae8a5a9ab" class="cocard">
-      <svg class="co-ic" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="#C9A86C"/>
-      </svg>
-      <div class="co-pl">Email Professionnel</div>
-      <div class="co-hd">tatianakinvoedo<br>@gmail.com</div>
-      <div class="co-ds">Sponsoring, collaborations mode — réponse sous 24h</div>
-    </a>
+      <div class="form-group">
+        <label class="form-label">Type de projet *</label>
+        <select name="type_projet" class="form-input form-select" required>
+          <option value="" disabled selected>Choisissez un type de projet</option>
+          <option value="Création sur mesure">Création sur mesure</option>
+          <option value="Collaboration mode">Collaboration mode</option>
+          <option value="Shooting / Modélisation">Shooting / Modélisation</option>
+          <option value="Conseil en stylisme">Conseil en stylisme</option>
+          <option value="Défilé / Événement">Défilé / Événement</option>
+          <option value="Autre projet">Autre projet</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Décrivez votre projet *</label>
+        <textarea name="message" class="form-input form-textarea" placeholder="Parlez-nous de votre projet : idées, style souhaité, délais, budget..." required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Numéro WhatsApp (optionnel)</label>
+        <input type="text" name="whatsapp" class="form-input" placeholder="+229 XX XX XX XX">
+      </div>
+
+      <button type="submit" class="form-btn">✉ Envoyer mon projet</button>
+    </form>
+
+    <!-- Infos contact -->
+    <div class="contact-info rv">
+      <div class="ci-title">Retrouvez Tatiana</div>
+
+      <a href="https://www.facebook.com/profile.php?id=61588599156769" target="_blank" class="cocard">
+        <svg class="co-ic" viewBox="0 0 24 24" fill="none"><path d="M24 12.073C24 5.404 18.627 0 12 0S0 5.404 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" fill="#C9A86C"/></svg>
+        <div class="co-pl">Facebook</div>
+        <div class="co-hd">Tatiana Kinvoedo</div>
+        <div class="co-ds">Actualités, coulisses créations, vie étudiante à l'ENSET</div>
+      </a>
+
+      <a href="https://www.tiktok.com/@misstati71?_r=1&_t=ZS-94CLpFKBFZ9" target="_blank" class="cocard">
+        <svg class="co-ic" viewBox="0 0 24 24" fill="none"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.52V6.76a4.85 4.85 0 01-1.02-.07z" fill="#C9A86C"/></svg>
+        <div class="co-pl">TikTok</div>
+        <div class="co-hd">@misstati71</div>
+        <div class="co-ds">Vidéos mode, défilés, tutoriels stylisme, coulisses créations</div>
+      </a>
+
+      <a href="https://wa.me/22993936295" target="_blank" class="cocard">
+        <svg class="co-ic" viewBox="0 0 24 24" fill="none"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="#C9A86C"/></svg>
+        <div class="co-pl">WhatsApp</div>
+        <div class="co-hd">+229 93 93 62 95</div>
+        <div class="co-ds">Disponible pour projets et collaborations — réponse rapide</div>
+      </a>
+    </div>
 
   </div>
 </section>
@@ -1029,7 +1000,6 @@
   <div class="ft-links">
     <a href="#home">Accueil</a>
     <a href="#portfolio">Portfolio</a>
-    <a href="#sponsors">Sponsors</a>
   </div>
   <div class="ft-copy">© 2026 Tatiana KINVOEDO · Propulsé par <a href="https://wa.me/22945955767" style="color:var(--gold);text-decoration:none;">Vynoralabs</a></div>
 </footer>
